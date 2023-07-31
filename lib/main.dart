@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:market/pages/home/main_page.dart';
 import 'package:market/pages/sign_in_page.dart';
 import 'package:market/pages/sign_up_page.dart';
 import 'package:market/pages/splash_page.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget{
         '/' : (context) => SplashPage(),
         '/sign-in' : (context) => SignInPage(),
         '/sign-up' : (context) => SignUpPage(),
+        '/home' : (context) => MainPage(),
       },
     );
   }

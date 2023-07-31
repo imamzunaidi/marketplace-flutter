@@ -239,13 +239,15 @@ Widget emailInput(){
     );
   }
 
-  Widget signUpButton(){
+  Widget signUpButton(BuildContext context){
     return Container(
       height: 50,
       width: double.infinity,
       margin: EdgeInsets.only(top: 50),
       child: TextButton(
-        onPressed: (){},
+        onPressed: (){
+           Navigator.pushNamed(context, '/home');
+        },
         style: TextButton.styleFrom(
           backgroundColor: primaryColor,
           shape: RoundedRectangleBorder(
@@ -311,7 +313,7 @@ Widget emailInput(){
               usernameInput(),
               emailInput(),
               passwordInput(),
-              signUpButton(),
+              signUpButton(context),
               Spacer(),
               footer(context),
             ],
